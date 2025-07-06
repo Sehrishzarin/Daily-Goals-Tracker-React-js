@@ -1,0 +1,53 @@
+body, html, .app-container {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Segoe UI", sans-serif;
+  color: white;
+  overflow: hidden;
+}
+
+.background-video {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+.content-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  padding: 2rem;
+  backdrop-filter: blur(15px);
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 12px;
+}
+
+.navbar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 2;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  background-color: rgba(0, 71, 171, 0.7);
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: rgba(0, 71, 171, 0.95);
+}
